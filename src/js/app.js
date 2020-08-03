@@ -3,10 +3,10 @@ export default class Team {
     this.characters = characters;
   }
 
-  *[Symbol.iterator]() {
+  * [Symbol.iterator]() {
     const list = this.characters;
-    for(let index in list) {
-      yield list[index];
+    for (const character of list) {
+      yield character;
     }
   }
 }
